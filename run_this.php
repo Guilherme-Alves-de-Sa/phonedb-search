@@ -1,6 +1,10 @@
 <?php
 // Este script foi feito em apenas um dia (peca de muito) e funciona apenas para o sítio phonedb.net
 // nota: não havia acesso a APIs que ajudassem a este problema significativamente
+$devicesJsonPath = "./devices.json";
+$minResHeight = 640;
+$minResWidth = 1136;
+
 
 require_once "phoneScript.php";
 
@@ -10,11 +14,11 @@ require_once "phoneScript.php";
 $phoneDB = new phoneScript();
 
 // escreve os dados "scrapped" de phonedb.net para o ficheiro "results.json"
-$phoneDB->runJsonForPhoneDB("./devices.json");
+$phoneDB->runJsonForPhoneDB($devicesJsonPath);
 
 // os dispositivos encontrados em phonedb.net poderão não ser os que se procura, separam-se em "rejected.json" e
 // "afterMatching.json" os rejeitados e os aceites respetivamente
 $phoneDB->matchingPercentage();
 
 // Vê quais os dispositivos que não têm a resolução mínima
-$phoneDB->checkRes();
+$phoneDB->checkRes($minResHeight, $minResWidth);

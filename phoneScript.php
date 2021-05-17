@@ -173,8 +173,8 @@ class phoneScript
         echo "Resultado: ".count($response)."/".(count($response)+count($rejected)) . PHP_EOL;
     }
 
-    // Verifica quais dos dispositivos aceites não têm as resoluções mínimas
-    public function checkRes(){
+    // Verifica quais dos dispositivos aceites não têm as resoluções mínimas (640x1136)
+    public function checkRes($minResHeight, $minResWidth){
         // ficheiro json na mesma diretoria do script com os modelos
         $str = file_get_contents('./afterMatching.json');
 
@@ -188,7 +188,7 @@ class phoneScript
         foreach ($response as $model){
             $aStrings = explode("x", $model["Resolution"]);
 
-            if((int)$aStrings[0] < 640 OR (int)$aStrings[1] < 1136){
+            if((int)$aStrings[0] < $minResHeight OR (int)$aStrings[1] < $minResWidth){
                 array_push($tooSmall, $model);
             }
         }
