@@ -1,5 +1,5 @@
 # phonedb-search
-Scrapping of phonedb.net to know which phones in a given list have a very small resolution.
+Search for devices of a given json file in phonedb.net, returns how many of those devices have a resolution lower than 640x1136
 
 This was made in a day and only works for phonedb.net
 
