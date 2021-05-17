@@ -1,0 +1,52 @@
+{
+    "1":
+        {
+            "device_model_name": "dandelion",
+            "device_hardware_model": "null"
+        },
+    "2":
+        {
+            "device_model_name": "X00HD",
+            "device_hardware_model": "ASUS_X00HD"
+        },
+    "3":
+        {
+            "device_model_name": "SM-A505F",
+            "device_hardware_model": "SM-A505F"
+        },
+    "4":
+        {
+            "device_model_name": "VFD 620",
+            "device_hardware_model": "VFD 620"
+        },
+    "5":
+        {
+            "device_model_name": "M2006C3LG",
+            "device_hardware_model": "M2006C3LG"
+        },
+    "6":
+        {
+            "device_model_name": "SM-A516B",
+            "device_hardware_model": "SM-A516B"
+        },
+    "7":
+        {
+            "device_model_name": "STARNAUTE3",
+            "device_hardware_model": "STARNAUTE3"
+        },
+    "8":
+        {
+            "device_model_name": "X01BDA",
+            "device_hardware_model": "ASUS_X01BDA"
+        },
+    "9":
+        {
+            "device_model_name": "SM-J500M",
+            "device_hardware_model": "SM-J500M"
+        },
+    "10":
+        {
+            "device_model_name": "Blade A5 2020",
+            "device_hardware_model": "ZTE Blade A5 2020"
+        }
+}
